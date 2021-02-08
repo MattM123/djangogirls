@@ -1,5 +1,6 @@
 h1 a, h2 a {
-     color: #eb7b2b;
+     color: #0869fa;
+     
  }
 
  body {
@@ -7,7 +8,7 @@ h1 a, h2 a {
  }
 
  .page-header {
-     background-color: #C25100;
+     background-color: #0869fa;
      margin-top: 0;
      padding: 20px 20px 20px 40px;
  }
