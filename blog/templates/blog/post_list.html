@@ -3,27 +3,12 @@
 
 <html>
     <head>
-        <title>Django Girls blog</title>
+        <title>Django Girls Blog</title>
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
         <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
         <h2><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h2>
         <link rel="stylesheet" href="{% static 'css/blog.css' %}">
-
-        <script>
-            function clickCounter() {
-              if (typeof(Storage) !== "undefined") {
-                if (localStorage.clickcount) {
-                  localStorage.clickcount = Number(localStorage.clickcount) + 1;
-                } else {
-                  localStorage.clickcount = 1;
-                }
-                document.getElementById("like").innerHTML = "♥ Like " + localStorage.clickcount;
-              } else {
-                document.getElementById("like").innerHTML = "Sorry, your browser does not support web storage...";
-              }
-            }
-            </script>
     </head>
     <body>
         <div class="page-header">
@@ -38,12 +23,9 @@
                             <div class="date">
                                 {{ post.published_date }}
                             </div>
-                            <h2><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h2>
-                            <p>{{ post.text|linebreaksbr }}</p>
+                            <h2 class="post-title"><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h2>
+                            <p class="post-space">{{ post.text|linebreaksbr }}</p>
                         </div>
-                   <!--     <button type="button" style="margin-bottom: 10px; padding-right: 40px;" onclick="clickCounter()" id="like">
-                            ♥ Like 
-                        </button>  -->
                     {% endfor %}
                 {% endblock %}
                 </div>
