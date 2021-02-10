@@ -83,6 +83,11 @@ h1 a, h2 a {
      resize: none;
  }
 
+ .apex-icon {
+     background-image: url("{% static 'icons/icons8apex-legends-50.png'%}");
+     height: 60px;
+     width: 60px;
+ }
  
  .top-menu, .top-menu:hover, .top-menu:visited {
      color: #ffffff;
