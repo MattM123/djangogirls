@@ -1,13 +1,18 @@
+{% extends 'blog/base.html' %}
+{% load static %}
+
 <html>
     <head>
         <link rel="stylesheet" href="{% static 'css/blog.css' %}">
     </head>
     <body>
         {% block content %}
-        <h2>New Post</h2>
+        <h2 class="edit-new-title">New Post</h2>
         <form method="POST" class="post-form" id="form">{% csrf_token %}
             {{ form.as_p }}
-            <button type="submit" class="save btn btn-default">Save</button>
+            <button type="submit" class="save">
+                Create Post<span class="glyphicon glyphicon-plus" style=" padding-left: 5px;"></span>         
+            </button>
         </form>
     {% endblock %}
     </body>

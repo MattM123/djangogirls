@@ -1,5 +1,5 @@
 h1 a, h2 a {
-     color: #0869fa;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
      
  }
 
@@ -34,15 +34,6 @@ h1 a, h2 a {
      font-family: Arial, Helvetica, sans-serif;
      font-weight: bold;
  }
-
- .edit-button {
-     text-align: left;
-     color: black;
-     background-color:transparent;
-     border: transparent; 
-     font-weight: bold;
-     font-size: larger;
- }
  
  .content {
      margin-left: 40px;
@@ -50,7 +41,7 @@ h1 a, h2 a {
  }
  
  h1, h2, h3, h4 {
-     font-family: "Lucida Console", "Courier New", monospace;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
  }
  
  .date {
@@ -65,7 +56,21 @@ h1 a, h2 a {
      padding-left: 5px;
      
  }
+
+ .apex-icon {
+    width: 20px;
+    height: 20px;
+ }
  
+ .edit-button {
+    text-align: left;
+    color: black;
+    background-color:transparent;
+    border: transparent; 
+    font-weight: bold;
+    font-size: larger;
+}
+
  .save {
      float: right;
      text-align: left;
@@ -80,7 +85,9 @@ h1 a, h2 a {
      width: 100%;
      background: linear-gradient(129deg, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0) 100%);
      color: black;
+     resize: none;
  }
+
  
  .top-menu, .top-menu:hover, .top-menu:visited {
      color: #ffffff;
@@ -98,9 +105,12 @@ h1 a, h2 a {
 
  .post-space {
      margin-left: 10px;
-
-
  }
+
+ .edit-new-title {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+ }
+
 
  .post-title {
      padding-left: 10px;

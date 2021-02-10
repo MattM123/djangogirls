@@ -7,10 +7,12 @@
     </head>
     <body>
         {% block content %}
-        <h2>Edit Post</h2>
-        <form method="POST" class="post-form" id="form">{% csrf_token %}
+        <h2 class="edit-new-title">Edit Post</h2>
+        <form method="POST" class="post-form">{% csrf_token %}
             {{ form.as_p }}
-            <button type="submit" class="save btn btn-default">Save</button>
+            <button type="submit" class="save">
+                Save Edits<span class="glyphicon glyphicon-floppy-save" style=" padding-left: 5px;"></span>         
+            </button>
         </form>
     {% endblock %}
     </body>
