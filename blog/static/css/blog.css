@@ -82,12 +82,6 @@ h1 a, h2 a {
      color: black;
      resize: none;
  }
-
- .apex-icon {
-     background-image: url("{% static 'icons/icons8apex-legends-50.png'%}");
-     height: 60px;
-     width: 60px;
- }
  
  .top-menu, .top-menu:hover, .top-menu:visited {
      color: #ffffff;
@@ -114,6 +108,8 @@ h1 a, h2 a {
 
  .post-title {
      padding-left: 10px;
+     font-family: monospace;
+     font-weight: bolder;
  }
  
  .post h2 a, .post h2 a:visited {

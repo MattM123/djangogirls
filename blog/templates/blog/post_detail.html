@@ -16,11 +16,11 @@
             {% endif %}
             {% if user.is_authenticated %}
            
-        <form method="GET" action="{% url 'post_edit' pk=post.pk %}">
-            <button class="edit-button">
-                Edit Post<span class="glyphicon glyphicon-pencil" style=" padding-left: 5px;"></span>        
-            </button>
-        </form>
+            <form method="GET" action="{% url 'post_edit' pk=post.pk %}">
+                <button class="edit-button">
+                    Edit Post<span class="glyphicon glyphicon-pencil" style=" padding-left: 5px;"></span>        
+                </button>
+            </form>
         
             {% endif %}
             <h2 class="post-title">{{ post.title }}</h2>
